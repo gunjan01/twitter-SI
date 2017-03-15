@@ -1,4 +1,4 @@
-import tweet11
+import test
 import IMDB
 
 movie=raw_input("enter movie name")
