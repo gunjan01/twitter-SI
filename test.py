@@ -7,10 +7,10 @@ import json
 from mechanize import Browser
 from BeautifulSoup import BeautifulSoup
 def twitterRating(name):
-	c_key=''
-	c_secret=''
-	a_token=''
-	a_secret=''
+	c_key='YOUR CONSUMER KEY'
+	c_secret='YOUR CONSUMER SECRET'
+	a_token='YOUR ACCESS TOKEN'
+	a_secret='YOUR ACCESS TOKEN SECRET'
 
 	OAUTH_KEYS={'consumer_key':c_key, 'consumer_secret':c_secret, 'access_token_key':a_token, 'access_token_secret':a_secret}
 
@@ -43,8 +43,8 @@ def twitterRating(name):
 	#values = {'data': [{'text': 'I love Titanic.'}, {'text': 'I hate Titanic.'}, {'text':'T titanic'}]}
 	data=[]
 
-	for each in results:
-	  data.append({"text":each.text})
+	for i in results:
+	  data.append({"text":i.text})
 
 	values = {'data': data}
 
